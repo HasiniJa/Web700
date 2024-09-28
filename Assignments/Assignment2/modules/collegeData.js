@@ -1,16 +1,15 @@
-const { rejects } = require('node:assert');
 const fs = require('node:fs');
-const { resolve } = require('node:path');
 
 class Data{
     constructor(students,courses){
         this.students=students;
         this.courses=courses;
-
     }
 }
 
 let dataCollection=null;
+
+// Initialize Function
 
 function initialize() {
     return new Promise((resolve, reject) => {
@@ -26,11 +25,10 @@ function initialize() {
                     return;
                 }
 
-                // Parse the JSON data
                 let students = JSON.parse(studentDataFromFile);
                 let courses = JSON.parse(courseDataFromFile);
 
-                // Creating new instance of Data class
+               
                 dataCollection = new Data(students, courses);
                 
             
@@ -85,9 +83,6 @@ module.exports = {
     getTAs,
     getCourses
 };
-
-    
-
 
 
 
