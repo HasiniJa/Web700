@@ -19,19 +19,19 @@ collegeData.initialize()
         return collegeData.getAllStudents();
     })
     .then(students => {
-        console.log(`Successfully retrieved ${students.length} students.`);
+        console.log(`Successfully retrieved ${students.length} students`);
         
         // Test getCourses 
         return collegeData.getCourses();
     })
     .then(courses => {
-        console.log(`Successfully retrieved ${courses.length} courses.`);
+        console.log(`Successfully retrieved ${courses.length} courses`);
         
         // Test getTAs 
         return collegeData.getTAs();
     })
     .then(tas => {
-        console.log(`Successfully retrieved ${tas.length} TAs.`);
+        console.log(`Successfully retrieved ${tas.length} TAs`);
     })
     .catch(err => {
         console.log(`Error: ${err}`);
