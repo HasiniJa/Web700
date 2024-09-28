@@ -38,7 +38,7 @@ function initialize() {
     });
 }
 
-// Function getallstudents
+// getallstudents function
 function getAllStudents() {
     return new Promise((resolve, reject) => {
         if (dataCollection && dataCollection.students.length > 0) {
@@ -49,7 +49,7 @@ function getAllStudents() {
     });
 }
 
-// Function getallTAs
+// getTAs function
 function getTAs() {
     return new Promise((resolve, reject) => {
         if (dataCollection) {
@@ -65,7 +65,7 @@ function getTAs() {
     });
 }
 
-// Function  getallcourses
+// getcourses function
 function getCourses() {
     return new Promise((resolve, reject) => {
         if (dataCollection && dataCollection.courses.length > 0) {
